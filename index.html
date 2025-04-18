@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Traffic Nightmare of Dhaka City</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--meta data for sharing links on Facebook-->
+    <meta property="og:title" content="Transportation challenges in Bangladesh's capital" />
+    <meta property="og:url" content="http://geoviz.ceoas.oregonstate.edu/storymap/examples/2.3/video.html" />
+    <meta property="og:description" content="This is an example of a storymap." />
+    <meta property="og:image" content="img/social.png" />
+
+    <!--add required stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!--facebook and info icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="dist/storymap.2.3.css">
+    <!--add required libraries-->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+    <!--mini globle map-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="js/globeminimap.js"></script>
+
+    <!--story map plugin-->
+    <script src="dist/storymap.2.3.js"></script>
+</head>
+
+<body>
+
+    <div id="storymap" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 storymap-story">
+                <section data-scene="overview" data-background="assets/Dhaka.mp4">
+                    <div class="fullscreen text-center">
+                        <h1><span style="background-color: rgba(0, 0, 0, 0.5)">Traffic Nightmare of Dhaka
+                                City</span>
+                        </h1>
+                        <h1>
+                            <small style="color: rgba(255,255,255,0.95)"><span
+                                    style="background-color: rgba(0, 0, 0, 0.5)">This story map reveals the most 5
+                                    traffic congested place in Dhaka City </span>
+                            </small>
+                        </h1>
+                    </div>
+                </section>
+                <section data-scene="portland">
+                    <h2>Dhaka's Traffic Overview</h2>
+                    <img src="assets/T1.webp" alt="Girl in a jacket" width=100%>
+                    <p style="text-align: justify;">Dhaka, the capital of Bangladesh, faces some of the most severe
+                        traffic congestion in the world.
+                        One of the primary reasons is the limited allocation of urban space to road infrastructure—only
+                        about 7% of the city's area is dedicated to roads. This is drastically low compared to
+                        international standards, where many modern cities allocate 20-25% or more.
+
+                        The city’s transportation network was originally designed to accommodate traffic volumes and
+                        patterns from the 1930s, a time when motorized vehicles were scarce and the population was
+                        significantly smaller. Fast forward to today, Dhaka is now home to over 2.4 million registered
+                        vehicles, all competing for space on a network that has seen minimal structural expansion
+                        relative to the rapid urbanization and population boom.
+
+                        This outdated infrastructure, combined with unregulated urban growth, lack of efficient public
+                        transportation, poor traffic management, and inadequate pedestrian facilities, has resulted in a
+                        chaotic and inefficient traffic system. Daily commutes often extend to hours for distances that
+                        should take minutes, significantly impacting productivity, air quality, and quality of life.
+
+                        Efforts have been made in recent years to improve the situation, such as the construction of
+                        flyovers, the introduction of the Dhaka Metro Rail, and various traffic control initiatives.
+                        However, without a comprehensive overhaul of the transportation system and better integration of
+                        land use and mobility planning, traffic congestion will remain a persistent challenge for the
+                        city.</p>
+
+                </section>
+
+                <section data-scene="corvallis">
+                    <h2>Farmgate</h2>
+                    <p>Farmgate is one of the most traffic-congested areas in Dhaka, serving as a central point that
+                        connects various parts of the city. It is surrounded by commercial buildings, coaching centers,
+                        government offices, and educational institutions, attracting thousands of people daily. Buses
+                        stop frequently to pick up and drop off passengers, causing lane blockages. The narrow roads,
+                        lack of designated bus stops, and the presence of rickshaws and street vendors further intensify
+                        the traffic pressure. During school and office hours, traffic in this area often comes to a
+                        complete standstill.
+
+                    </p>
+                    <img src="assets/T2.1.webp" alt="Girl in a jacket" width=100%>
+                    <img src="assets/T2.1.jpg" alt="Girl in a jacket" width=100%>
+                </section>
+
+                <section data-scene="eugene">
+                    <h2>Mohakhali Intersection</h2>
+                    <p>Mohakhali is a crucial transportation node that connects to key neighborhoods like Gulshan,
+                        Banani, and Tejgaon. The Mohakhali Bus Terminal, one of Dhaka’s busiest inter-district
+                        terminals, adds significant pressure to the local road network. Vehicles entering and exiting
+                        the terminal often obstruct the main road, while local buses, rickshaws, and motorbikes weave
+                        through traffic with little regulation. Office buildings, hospitals, and shops lining the roads
+                        add to pedestrian movement, making it one of the most chaotic intersections in the city.
+
+                    </p>
+                    <img src="assets/T3.1.jpg" alt="Girl in a jacket" width=100%>
+                </section>
+
+                <section data-scene="salem">
+                    <h2>Moghbazar-Mouchak Flyover Area</h2>
+                    <p>The Moghbazar-Mouchak area was supposed to benefit from a multi-level flyover system designed to
+                        ease congestion. However, the flyover has not significantly reduced traffic at ground level.
+                        Vehicles exiting and entering the flyover often merge unpredictably with ground-level traffic,
+                        causing frequent jams. The area has several intersections, including the Siddeshwari and Ramna
+                        roads, which intersect at awkward angles. Heavy commercial activity and a lack of traffic signal
+                        coordination contribute to severe congestion, especially during the morning and evening rush
+                        hours.
+
+                    </p>
+                    <img src="assets/T4.1.webp" alt="Girl in a jacket" width=100%>
+                </section>
+                <section data-scene="bend">
+                    <h2>Gulistan Intersection</h2>
+                    <p>Gulistan, located in Old Dhaka, is both a commercial hub and a key transportation point. The area
+                        is lined with bustling street markets, numerous bus counters, and informal vendors, leaving
+                        little space for smooth vehicular movement. Public buses dominate the roads, often stopping
+                        haphazardly to pick up passengers. The road network here is narrow and outdated, with little
+                        scope for expansion. Combined with poor traffic management and a high volume of pedestrian
+                        crossings, the intersection frequently experiences gridlock that affects adjacent areas like
+                        Bangabazar and Paltan.
+
+                    </p>
+                    <img src="assets/T4.1.jpg" alt="Girl in a jacket" width=100%>
+                </section>
+
+                <section data-scene="oregon">
+                    <h2>Jatrabari Intersection</h2>
+                    <p>Jatrabari serves as a major exit and entry point for vehicles traveling to and from southern
+                        parts of Bangladesh. The Dhaka-Chittagong highway begins here, making it a strategic but heavily
+                        burdened location. Long-haul buses, trucks, and cargo vehicles regularly clog the roads. The
+                        presence of wholesale markets, schools, and local businesses adds to the complexity of the
+                        traffic flow. Roadside stalls, unauthorized parking, and poor traffic enforcement make the
+                        situation worse, often creating tailbacks that stretch for kilometers, especially during
+                        weekends and holidays.
+
+                    </p>
+                    <img src="assets/T5.1.webp" alt="Girl in a jacket" width=100%>
+                </section>
+
+
+            </div>
+            <!--map div-->
+            <div class="col-sm-6 col-md-8 storymap-map"></div>
+        </div>
+
+
+        <dl>
+            <dt>
+                <!--facebook icon-->
+                <a class="fa fa-facebook-square btn" href="https://www.facebook.com/mashrurzaman.saad/"
+                    target="_blank"></a>
+            </dt>
+            <dt>
+                <!--facebook icon-->
+                <a class="fa fa-git-square btn" href="https://github.com/Iskibar2020" style="top:40px"
+                    target="_blank"></a>
+            </dt>
+        </dl>
+
+        <!--the info page-->
+    </div>
+
+    <!-- main javascript -->
+    <script type="text/javascript">
+
+
+        // Create Legend Contents in html format
+        var county_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Counties</b></p>';
+        var forest_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Forest</b></p>';
+
+        // For each layer, the first variable is the layer, the second is the legend. The layer variable can be any kinds of layers that leaflet.js supports.
+        // var layers = {
+        //      layer1: {layer: layer1, legend: legend1},
+        //      layer2: {layer: layer2, legend: legend2}
+        //      ...
+        // }
+
+        var layers = {
+            ESRI: { layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}') },
+            counties: {
+                layer: L.geoJson.ajax('assets/counties.geojson', {
+                    color: 'orange',
+                    weight: 2,
+                    opacity: 0.3
+                }), legend: county_legend
+            },
+            GEE: {
+                layer: L.tileLayer('http://earthengine.google.org/static/hansen_2013/tree_alpha/{z}/{x}/{y}.png'),
+                legend: forest_legend
+            },
+            satellite: {
+                layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {
+                    id: 'mapbox.satellite'
+                })
+            },
+            cartodb_light: { layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png') }
+        };
+
+        var scenes = {
+            overview: { lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'Cover Page' },
+            portland: { lat: 23.8103, lng: 90.4125, zoom: 12, name: 'Portland' },
+            corvallis: { lat: 23.7574, lng: 90.3887, zoom: 16, name: 'Corvallis', layers: ['ESRI'] },
+            eugene: { lat: 23.7801, lng: 90.4005, zoom: 16, name: 'Eugene', layers: ['ESRI'] },
+            salem: { lat: 23.7464, lng: 90.4100, zoom: 16, name: 'Salem', layers: ['ESRI'] },
+            bend: { lat: 23.7276, lng: 90.4179, zoom: 16, name: 'Bend', layers: ['satellite'] },
+            oregon: { lat: 23.7104, lng: 90.4358, zoom: 16, name: 'Oregon State', layers: ['ESRI'] },
+            end: { lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'The End' }
+        };
+
+        $('#storymap').storymap({
+            scenes: scenes,
+            layers: layers,
+            baselayer: layers.cartodb_light,
+            legend: true, // if you do not want a legend feature, you can simply not define the createLegend function.
+            credits: "",
+            loader: true,
+            scalebar: false,
+            flyo: true,
+            navwidget: true,
+
+            createMap: function () {
+                // create a map in the "map" div, set the view to a given place and zoom
+                var map = L.map($(".storymap-map")[0], {
+                    zoomControl: false, scrollWheelZoom: false, fadeAnimation: true,
+                    zoomAnimation: true
+                }).setView([44, -120], 7);
+
+                //add an miniglobe
+                new L.Control.GlobeMiniMap({
+                    marker: 'red',
+                    position: 'bottomright'
+                }).addTo(map);
+
+
+                return map;
+            }
+        });
+    </script>
+</body>
+
+</html>
